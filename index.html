@@ -5,9 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>강아지쉼터</title>
     <script src="https://kit.fontawesome.com/2100586b6b.js" crossorigin="anonymous">
 
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+
+    </script>
+
+
+    <script>
+
+        $(function () {
+            $(".ham").click(function () {
+                $(".menu").slideToggle();
+            });
+        });
+
+        $(window).resize(function () {
+            if (window.innerWidth >= 768) {
+                $('.menu').show();
+            }
+            else {
+                $('.ham').hide();
+            }
+        });
     </script>
 
     <link rel="stylesheet" href="css/style.css">
@@ -23,6 +47,7 @@
                     <div class="messenger">
                         <p>Tel : <b>031-431-6262</b> or E-mail : <b>
                                 animaldog@google.com</b></p>
+                        <img src="img/i.png" alt="ham" class="ham">
                     </div>
 
                     <div class="platform">
@@ -279,6 +304,7 @@
                         <div class="six_imgbox">
                             <img src="img/list1.jpg" alt="dog1">
                         </div>
+
                         <h2>목 욕</h2>
 
                         <div>
@@ -434,11 +460,11 @@
         </div>
     </footer>
 
-    <footer id="footer_box">
+    <div id="footer_box">
         <div class="container">
             <p>Copyright © connectwave Co., Ltd. All Rights Reserved.</p>
         </div>
-    </footer>
+        </footer>
 
     </div>
 </body>
