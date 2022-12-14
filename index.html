@@ -18,20 +18,39 @@
 
     <script>
 
-        $(function () {
-            $(".ham").click(function () {
-                $(".menu").slideToggle();
-            });
-        });
+        // $(function () {
+        //     $(".ham").click(function () {
+        //         $(".menu").slideToggle();
+        //     });
+        // });
 
-        $(window).resize(function () {
-            if (window.innerWidth >= 768) {
-                $('.menu').show();
-            }
-            else {
-                $('.ham').hide();
-            }
-        });
+        
+
+        $(document).ready(function () {
+                $('.ham').click(function () {
+                    $('#myNav').css('width', '100%');
+                });
+
+                $('.closebtn').click(function () {
+                    $('#myNav').css('width', '0');
+                });
+
+
+                $(window).resize(function () {
+                    if (window.innerWidth >= 1140) {
+                        $('#myNav').css('display', 'block').css('width', '818px');
+                    }
+                    else {
+                        $('#myNav').css('display', 'none');
+                        $('.ham').click(function () {
+                            $('#myNav').css('display', 'block').css('width', '100%');                        });
+
+                        $('.closebtn').click(function () {
+                            $('#myNav').css('width', '0');
+                        });
+                    }
+                });
+            });
     </script>
 
     <link rel="stylesheet" href="css/style.css">
@@ -47,7 +66,6 @@
                     <div class="messenger">
                         <p>Tel : <b>031-431-6262</b> or E-mail : <b>
                                 animaldog@google.com</b></p>
-                        <img src="img/i.png" alt="ham" class="ham">
                     </div>
 
                     <div class="platform">
@@ -59,20 +77,27 @@
                 </div>
 
                 <div id="header2">
-                    <div class="logo">
-                        <img src="img/logo.png" alt="logo">
+                    <div id="header2_togglebox">
+                        <div class="logo">
+                           <a href="#"> <img src="img/logo.png" alt="logo" class="logo"></a>
+                        </div>
+                        <img src="img/i.png" alt="image" class="ham">
                     </div>
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#">강아지 찾습니다</a></li>
-                            <li><a href="#">강아지 보호중입니다</a></li>
-                            <li><a href="#">강아지 분양</a></li>
-                            <li><a href="#">자원봉사신청</a></li>
-                            <li><a href="#">후원신청</a></li>
-                            <li><a href="#">정보마당</a></li>
-                            <li><a href="#">1:1문의</a></li>
-                            <li><a href="#">상담신청</a></li>
-                        </ul>
+                    
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn">&times;</a>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">강아지 찾습니다</a></li>
+                                <li><a href="#">강아지 보호중입니다</a></li>
+                                <li><a href="#">강아지 분양</a></li>
+                                <li><a href="#">자원봉사신청</a></li>
+                                <li><a href="#">후원신청</a></li>
+                                <li><a href="#">정보마당</a></li>
+                                <li><a href="#">1:1문의</a></li>
+                                <li><a href="#">상담신청</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
