@@ -136,6 +136,7 @@ ol {
 }
 
 #header_box span>a {
+    text-align: center;
     text-decoration: none;
     color: black;
 }
@@ -144,7 +145,7 @@ ol {
     background-color: magenta;
 }
 
-#header_box span img {
+#header_box span i {
     width: 20px;
     height: 15px;
     vertical-align: middle;
@@ -209,7 +210,7 @@ ol {
 
 #two {
     width: 100%;
-    height: 706px;
+    height: 800px;
 }
 
 #two>.container {
@@ -253,16 +254,17 @@ ol {
 
 #three {
     width: 1140px;
-    height: 288px;
+    height: 200px;
     margin: 0 auto;
 }
 
 #three form>button {
-    margin-top: 5px;
+    border-radius: 3px;
     background-color: hotpink;
     border-style: none;
     color: white;
     vertical-align: middle;
+    width:250px;
 }
 
 #three h1 {
@@ -342,10 +344,6 @@ input {
     bottom: 0;
 }
 
-.people>div:hover {
-    background-color: hotpink;
-}
-
 .people .persona {
     border-radius: 50% 50%;
     background: black;
@@ -371,6 +369,10 @@ input {
 
 .people_icon>a>i:hover {
     background-color: plum;
+}
+
+.people>div:hover {
+    background-color: hotpink;
 }
 
 #five {
@@ -460,7 +462,7 @@ input {
 
 #six {
     width: 100%;
-    height: 1106px;
+    height: 1000px;
 }
 
 #six h1 {
@@ -531,7 +533,7 @@ input {
 
 #seven {
     width: 100%;
-    height: 887px;
+    height: 760px;
 }
 
 #seven>.container {
@@ -593,8 +595,8 @@ input {
 
 footer {
     width: 100%;
-    height: 550px;
-    background-color: darkgrey;
+    height: 420px;
+    background-color: #ddd;
 }
 
 footer a {
@@ -610,6 +612,7 @@ footer>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 400px;
 }
 
 .footer1 {
@@ -626,7 +629,8 @@ footer>.container {
 .footer1>.footerimg>a>i {
     font-size: 40px;
     background-color: pink;
-
+    padding:5px;
+    border-radius: 10px;
     color: deeppink;
 }
 
@@ -688,6 +692,7 @@ footer>.container {
 
 .footer4 li i {
     color: hotpink;
+  
 }
 
 .footer4 li img {
@@ -852,14 +857,13 @@ footer>.container {
         background-color: pink;
     }
 
-
-
     /* 햄버거 진짜 끝 */
 
     #header2 {
         width: 100%;
         height:110px;
         background-color: whitesmoke;
+        padding:0 10px;
 
     }
 
@@ -977,18 +981,16 @@ footer>.container {
 
     #two {
         width: 100%;
-        height: 1300px;
+        height: 1190px;
     }
 
-    .two img {
-        width: 100%;
-        height: 100%;
+    .twoimg {
+        width: 100%;      
     }
 
     #two>.container>.twoimg img {
         width: 100%;
-        max-height: 100%;
-        margin-left: 13px;
+        max-height: 100%;  
     }
 
     .twotext_box {
@@ -1016,7 +1018,7 @@ footer>.container {
 
     #three {
         width: 100%;
-        height: 708px;
+        height: 600px;
         display: flex;
     }
 
@@ -1044,7 +1046,7 @@ footer>.container {
 
     #four {
         width: 100%;
-        height: 2000px;
+        height: 2050px;
     }
 
     .container>.people_box {
@@ -1070,6 +1072,17 @@ footer>.container {
         margin: 0 auto;
     }
 
+    .review_box>.review1 {
+        width:370px;
+        height: 250px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-start;
+        padding: 60px 30px 0 0;
+        box-shadow: 3px 3px 3px;
+    }
     .review_box {
         height: 900px;
         display: flex;
@@ -1082,7 +1095,7 @@ footer>.container {
 
     #six {
         width: 100%;
-        height: 3300px;
+        height: 3100px;
     }
 
     #six>.container {
@@ -1166,7 +1179,7 @@ footer>.container {
     /* seven start */
     #seven {
         width: 100%;
-        height: 1900px;
+        height: 1800px;
     }
 
     #seven>.container {
@@ -1238,11 +1251,12 @@ footer>.container {
 
     footer {
         width: 100%;
-        height: 1450px;
+        height: 1350px;
     }
 
     footer>.container{
         padding:0 10px;
+       
     }
 
     #footer_box {
@@ -1400,6 +1414,7 @@ footer>.container {
         width: 100%;
         height:110px;
         background-color: whitesmoke;
+        padding:0 10px;
 
     }
     /* 헤더끝 */
@@ -1419,15 +1434,17 @@ footer>.container {
     #one_list {
         width: 100%;
         height: 150px;
+        padding:0 10px;
     }
 
     #one_list>.list:hover {
         background-color: hotpink;
+        padding:0 10px;
     }
 
     #one_list>.list {
         width: 27%;
-        height: 230px;
+        height: 210px;
         background-color: whitesmoke;
     }
 
@@ -1504,7 +1521,7 @@ footer>.container {
 
     #three {
         width: 100%;
-        height: 800px;
+        height: 730px;
     }
 
     #three h1{
@@ -1583,7 +1600,6 @@ footer>.container {
         width: 100%;
         height: 70%;
         background-color: whitesmoke;
-
     }
 
     .people>div:hover {
@@ -1620,7 +1636,7 @@ footer>.container {
 
     #five {
         width: 100%;
-        height: 1200px;
+        height: 1100px;
         background-image: url(../img/backdog.jpg);
         background-position: center;
         background-size: cover;
@@ -1644,7 +1660,7 @@ footer>.container {
 
     #six {
         width: 100%;
-        height: 2100px;
+        height: 1950px;
     }
 
     #six>.container {
@@ -1728,7 +1744,7 @@ footer>.container {
     /* seven start */
     #seven {
         width: 100%;
-        height: 2500px;
+        height: 2430px;
     }
 
     #seven>.container {
@@ -1759,8 +1775,6 @@ footer>.container {
         max-width: 100%;
         height:65%;
     }
-
-
 
     .box img:hover {
         opacity: 0.8;
@@ -1817,34 +1831,23 @@ footer>.container {
         width: 46%;
         height: 300px;
         padding-left:10px;
-
     }
 
     .footer2 {
         width: 46%;
         height: 300px;
         padding-left:10px;
-
     }
 
     .footer3 {
         width: 46%;
         height: 300px;
-
     }
 
     .footer4 {
         width: 46%;
         height: 300px;
     }
-
-
-
-
-
-
-
-
 
     #footer_box {
         width: 100%;
