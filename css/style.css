@@ -42,6 +42,7 @@ ol {
     background-image: url(../img/dog5.jpg);
     background-size: cover;
     background-position: center;
+    /* background-attachment: fixed; */
 }
 
 
@@ -72,8 +73,15 @@ ol {
     line-height: 30px;
 }
 
+.platform>div>a{
+    color:hotpink;
+}
+.platform>div>a:hover{
+    color:white;
+}
+
 .platform>div:hover {
-    background-color: hotpink;
+    background-color: pink;
 }
 
 #header2 {
@@ -82,7 +90,9 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    /* position: sticky;
+    top:0;
+    z-index: 5;    */
 }
 
 .closebtn{
@@ -93,10 +103,6 @@ ol {
     display: none;
 }
 
-/* #myNav{
-
-    width:818px;
-} */
 
 .menu ul {
     display: flex;
@@ -192,7 +198,6 @@ ol {
 
 #one_list>.list>.listimg>i {
     font-size: 60px;
-
 }
 
 #one_list>.list>.listtext {
@@ -363,12 +368,14 @@ input {
 .people_icon>a>i {
     font-size: 40px;
     background-color: white;
-    border-radius: 5px;
-    margin: 5px;
+    border-radius: 5px;   
+    color:hotpink;
+    padding:5px;
 }
 
 .people_icon>a>i:hover {
-    background-color: plum;
+    color:white;
+    background-color: pink;
 }
 
 .people>div:hover {
@@ -383,6 +390,7 @@ input {
     background-image: url(../img/backdog.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #five h1 {
@@ -1188,7 +1196,7 @@ footer>.container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     #seven>.container>h1 {
@@ -1199,7 +1207,7 @@ footer>.container {
 
     .box {
         box-shadow: 4px 4px 4px #eee;
-        width: 100%;
+        width: 90%;
         max-height: 100%;
         border: 1px solid #ddd;
         background-color: white;
@@ -1446,6 +1454,7 @@ footer>.container {
         width: 27%;
         height: 210px;
         background-color: whitesmoke;
+        padding:0 10px;
     }
 
     #one_list>.list>.listimg {
@@ -1460,6 +1469,7 @@ footer>.container {
 
     #one_list>.list>.listimg>i {
         font-size: 60px;
+       
     }
 
     #one_list>.list>.listtext {
