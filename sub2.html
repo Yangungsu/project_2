@@ -5,23 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강아지쉼터</title>
+    <title>Document</title>
 
     <script src="https://kit.fontawesome.com/2100586b6b.js" crossorigin="anonymous">
-
     </script>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub2.css">
     <link rel="stylesheet" href="css/sub.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/js.js"></script>
 
 
+    <script>
+        function prev() {
+
+            $('.slide li:last').prependTo('.slide');
+
+            $('.slide').css('margin-left', '-100%'); // $('.slide').css({marginLeft:-1000}); 
+
+            $('.slide').stop().animate({ marginLeft: 0 }, 800);
+
+        }
 
 
+        function next() {
+
+            $('.slide').stop().animate({ marginLeft: '-100%' }, 800, function () {
+
+                $('.slide li:first').appendTo('.slide');
+
+                $('.slide').css({ marginLeft: 0 });
+
+            });
+
+        }
+
+
+        setInterval(next, 3000);
+
+        $(document).ready(function () {
+            $('.prev').click(function () {
+
+                prev();
+
+            });
+
+            $('.next').click(function () {
+
+                next();
+
+            });
+        });
+
+    </script>
 </head>
 
 <body>
-
     <div id="wrap">
         <div id="slider">
             <div class="container">
@@ -64,131 +103,60 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
 
-       
-
-        <div id="section_two">
+        <div id="section_one">
             <div class="container">
-                <h1>강아지분양</h1>
 
-                <div class="listimage">
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/포메라니안.JPG" alt="dog1"></a>
-                        <p>포메라니안 뭉치</p>
-                    </div>
-
-                    <div><a href="#"><img src="img/메뉴강아지/포메라니안2.JPG" alt="dog2"></a>
-                        <p>포메라니안 퐁키</p>
-                    </div>
-
-                    <div><a href="#"><img src="img/메뉴강아지/포메라니안3.JPG" alt="dog3"></a>
-                        <p>포메라니안 루디</p>
-                    </div>
-
-                    <div><a href="#"><img src="img/메뉴강아지/포메라니안4.JPG" alt="dog4"></a>
-                        <p>포메라니안 루비</p>
-                    </div>
+                <div class="list_menu">
+                    <ul>
+                        <li class="click"><a href="#">입양후기</a></li>
+                        <li class="click"><a href="#">입양시스템</a></li>
+                        <li class="click"><a href="#">입양절차 및 책임비가이드</a></li>
+                        <li class="click"><a href="#">리뷰게시판</a></li>
+                    </ul>
                 </div>
 
-                <div class="listimage1 close">
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/닥스훈트.JPG" alt="dog5"></a>
-                        <p>닥스훈트 진돌이</p>
-                    </div>
+                <div class="dogreview">
+                    <ul class="slide">
 
-                    <div><a href="#"><img src="img/메뉴강아지/말티즈.JPG" alt="dog6"></a>
-                        <p>말티즈 솜이</p>
-                    </div>
+                        <li>
+                            <div> <img src="img/입양후기이미지/개1.JPG" alt="slide"></div>
+                            <div><img src="img/입양후기이미지/개2.JPG" alt="slide"></div>
+                            <div> <img src="img/입양후기이미지/개3.JPG" alt="slide"></div>
 
-                    <div><a href="#"><img src="img/메뉴강아지/말티즈2.JPG" alt="dog7"></a>
-                        <p>말티즈 삼돌이</p>
-                    </div>
+                        </li>
 
-                    <div><a href="#"><img src="img/메뉴강아지/말티푸.JPG" alt="dog8"></a>
-                        <p>말티푸 힙똘이</p>
-                    </div>
-                </div>
 
-                <div class="listimage2 close">
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/말티푸2.JPG" alt="dog9"></a>
-                        <p>말티푸 티코</p>
-                    </div>
+                        <li>
+                            <div> <img src="img/입양후기이미지/개4.JPG" alt="slide"></div>
+                            <div> <img src="img/입양후기이미지/개5.JPG" alt="slide"></div>
+                            <div> <img src="img/입양후기이미지/개6.JPG" alt="slide"></div>
+                        </li>
 
-                    <div><a href="#"><img src="img/메뉴강아지/비숑2.JPG" alt="dog10"></a>
-                        <p>비숑프리제 비누</p>
-                    </div>
+                        <li>
+                            <div><img src="img/입양후기이미지/개7.JPG" alt="slide"></div>
+                            <div><img src="img/입양후기이미지/개8.JPG" alt="slide"></div>
+                            <div><img src="img/입양후기이미지/개9.JPG" alt="slide"></div>
+                        </li>
 
-                    <div><a href="#"><img src="img/메뉴강아지/비숑프리제.JPG" alt="dog11"></a>
-                        <p>비숑프리제 모카</p>
-                    </div>
+                        <li>
+                            <div><img src="img/입양후기이미지/개10.JPG" alt="slide"></div>
+                            <div><img src="img/입양후기이미지/개11.JPG" alt="slide"></div>
+                            <div><img src="img/입양후기이미지/개12.JPG" alt="slide"></div>
+                        </li>
 
-                    <div><a href="#"><img src="img/메뉴강아지/사모예드.JPG" alt="dog12"></a>
-                        <p>사모예드 우유</p>
-                    </div>
-                </div>
+                    </ul>
 
-                <div class="listimage3 close">
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/스피츠.JPG" alt="dog13"></a>
-                        <p>스피츠 날랭이</p>
-                    </div>
+                    <span class="prev">&lt;</span>
+                    <span class="next">&gt;</span>
 
-                    <div><a href="#"><img src="img/메뉴강아지/웰시코기.JPG" alt="dog14"></a>
-                        <p>웰시코기 아리</p>
-                    </div>
-
-                    <div><a href="#"><img src="img/메뉴강아지/웰시코기2.JPG" alt="dog15"></a>
-                        <p>웰시코기 피즈</p>
-                    </div>
-
-                    <div><a href="#"><img src="img/메뉴강아지/웰시코기3.JPG" alt="dog16"></a>
-                        <p>웰시코기 망키</p>
-                    </div>
-                </div>
-
-                <div class="listimage4 close">
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/웰시포.JPG" alt="dog17"></a>
-                        <p>웰시포 웰치스</p>
-                    </div>
-
-                    <div><a href="#"><img src="img/메뉴강아지/치와와.JPG" alt="dog18"></a>
-                        <p>치와와 왕왕이</p>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/하이브리드2.JPG" alt="dog19"></a>
-                        <p>하이브리드견 겨울이</p>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="img/메뉴강아지/하이브리드.JPG" alt="dog20"></a>
-                        <p>하이브리드견 여름이</p>
-                    </div>
-                </div>
-
-                <div class="more">
-                    <a class="btn_more" value="더보기">더보기</a>
                 </div>
             </div>
         </div>
 
-        <div id="section_three">
-            <div class="container">
-                <div class="pagenum">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#" title="다음페이지"><i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
 
 
         <footer>
@@ -250,6 +218,9 @@
             </div>
         </div>
     </div>
+
+
+
 </body>
 
 </html>
