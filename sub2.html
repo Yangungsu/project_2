@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>강아지쉼터 정보마당</title>
 
     <script src="https://kit.fontawesome.com/2100586b6b.js" crossorigin="anonymous">
     </script>
@@ -57,6 +57,56 @@
             });
         });
 
+
+        $(function(){
+            $(".click:nth-of-type(1)").click(function(){
+                $(".dogreview").show();
+                $("#animal_paper").hide();
+                $("#step_all").hide();
+                $("#emergency").hide();
+                $(".click:nth-of-type(1)").css("background-color","darkgray");
+                $(".click:nth-of-type(2)").css("background-color","#eee");
+                $(".click:nth-of-type(3)").css("background-color","#eee");
+                $(".click:nth-of-type(4)").css("background-color","#eee");
+                // $("#section_one").css("height","700px");
+            });
+
+            $(".click:nth-of-type(2)").click(function(){
+                $(".dogreview").hide();
+                $("#animal_paper").show();
+                $("#step_all").hide();
+                $("#emergency").hide();
+                $(".click:nth-of-type(1)").css("background-color","#eee");
+                $(".click:nth-of-type(2)").css("background-color","darkgray");
+                $(".click:nth-of-type(3)").css("background-color","#eee");
+                $(".click:nth-of-type(4)").css("background-color","#eee");  
+                // $("#section_one").css("height","800px");             
+            });
+
+            $(".click:nth-of-type(3)").click(function(){
+                $(".dogreview").hide();
+                $("#animal_paper").hide();
+                $("#step_all").show();
+                $("#emergency").hide();  
+                $(".click:nth-of-type(1)").css("background-color","#eee");
+                $(".click:nth-of-type(2)").css("background-color","#eee");
+                $(".click:nth-of-type(3)").css("background-color","darkgray");
+                $(".click:nth-of-type(4)").css("background-color","#eee"); 
+                          
+            });
+
+            $(".click:nth-of-type(4)").click(function(){
+                $(".dogreview").hide();
+                $("#animal_paper").hide();
+                $("#step_all").hide();
+                $("#emergency").show();   
+                $(".click:nth-of-type(1)").css("background-color","#eee");
+                $(".click:nth-of-type(2)").css("background-color","#eee");
+                $(".click:nth-of-type(3)").css("background-color","#eee");
+                $(".click:nth-of-type(4)").css("background-color","darkgray");                                      
+            });
+        });
+
     </script>
 </head>
 
@@ -82,7 +132,7 @@
                 <div id="header2">
                     <div id="header2_togglebox">
                         <div class="logo">
-                            <a href="#"> <img src="img/logo.png" alt="logo" class="logo"></a>
+                            <a href="index.html"> <img src="img/logo.png" alt="logo" class="logo"></a>
                         </div>
                         <img src="img/i.png" alt="image" class="ham">
                     </div>
@@ -93,10 +143,10 @@
                             <ul>
                                 <li><a href="#">강아지 찾습니다</a></li>
                                 <li><a href="#">강아지 보호중입니다</a></li>
-                                <li><a href="#">강아지 분양</a></li>
+                                <li><a href="sub.html">강아지 분양</a></li>
                                 <li><a href="#">자원봉사신청</a></li>
                                 <li><a href="#">후원신청</a></li>
-                                <li><a href="#">정보마당</a></li>
+                                <li><a href="sub2.html">정보마당</a></li>
                                 <li><a href="#">1:1문의</a></li>
                                 <li><a href="#">상담신청</a></li>
                             </ul>
@@ -115,11 +165,13 @@
                         <li class="click"><a href="#">입양후기</a></li>
                         <li class="click"><a href="#">동물등록증 안내</a></li>
                         <li class="click"><a href="#">입양절차 및 책임비가이드</a></li>
-                        <li class="click"><a href="#">자유게시판</a></li>
+                        <li class="click"><a href="#">유기동물 구조조치</a></li>
                     </ul>
                 </div>
 
                 <div class="dogreview">
+
+                    <h1>입양후기</h1>
                     <ul class="slide">
 
                         <li>
@@ -140,11 +192,7 @@
                                 <p>근육이 입양후기</p>
                                 <p>얘 운동한거 같아요</p>
                             </div>
-
-
-
                         </li>
-
 
                         <li>
                             <div>
@@ -186,7 +234,6 @@
                                     서로 잘 지내고있습니다!!
                                 </p>
                             </div>
-
                         </li>
 
                         <li>
@@ -207,7 +254,6 @@
                                 <p>뚜비 입양후기</p>
                                 <p>역시 입양은 유기견입양이 최고입니다!</p>
                             </div>
-
                         </li>
                     </ul>
 
@@ -216,6 +262,7 @@
                 </div>
 
                 <div id="animal_paper">
+                    <h1>동물등록증 안내</h1>
                     <ol>
                         <li>
                             1. [모바일 변경 신고 이용앱] 모바일 'Daum 및 카카오톡'앱에서 [동물보호관리시스템]에 접속하면,<br>
@@ -247,7 +294,7 @@
                         </li>
                     </ol>
                 </div>
-                
+
 
                 <div id="step_all">
 
@@ -293,7 +340,7 @@
                         <i style="font-size:70px;" class="fa-solid fa-right-long"></i>
 
                         <div class="step2_text">
-                           
+
                             <img src="img/서류개발바닥.JPG" alt="서류">
                             <p>책임분양계약 및 입양</p>
                             <p>상담 및 분양계약서 작성</p>
@@ -301,18 +348,302 @@
                     </div>
 
                     <hr>
-                    
-                        <div id="step3">
-                            <div id="number_area">
-                                <div class="number">3</div>
-                            </div>
-                            <p>"책임비 안내"</p>
-                            <p>·책임비는 유기동물보호 및 케어, 입양장려 캠페인, 유기견방지 캠페인 등에 쓰여집니다.</p>
-                            <p>·아이에 따라 무료분양 또는 소정의 책임비가 부여됩니다.</p>
-                            <p>·충분한 신뢰를 입증한 재입양 회원은 책임비가 면제될 수 있습니다.</p>
+
+                    <div id="step3">
+                        <div id="number_area">
+                            <div class="number">3</div>
                         </div>
-                
+                        <p>"책임비 안내"</p>
+                        <p>·책임비는 유기동물보호 및 케어, 입양장려 캠페인, 유기견방지 캠페인 등에 쓰여집니다.</p>
+                        <p>·아이에 따라 무료분양 또는 소정의 책임비가 부여됩니다.</p>
+                        <p>·충분한 신뢰를 입증한 재입양 회원은 책임비가 면제될 수 있습니다.</p>
+                    </div>
+                </div>
+
+
+                <div id="emergency">   
+                    <div id="emergency_one">
+                        <h1>유기동물 발견시</h1><br>
+
+                        <h2>상황에 맞게 조치하세요!</h2><br>
+                        <ul>
+                            <li><a href="">01. 긴급동물 발견시 대처요령</a></li>
+                            <li><a href="">02. 이런 동물은 구조를 미뤄보세요.</a></li>
+                            <li><a href="">03. 긴급 동물 보호조치 접수 방법</a></li>
+                            <li><a href="">04. 야생동물 구조관련 단체 및 기관</a></li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                    <br>
+                    <div id="emergency_two">
+                        <h1>01.긴급동물 발견시 대처요령</h1><br>
                         
+                        <h2>차량 사고 등으로 인해 긴급 치료를 요할 시</h2><br>
+
+                        <p class="point">동물을 인근 동물병원으로 옮기셔야합니다</p>
+
+                        <div class="emergency_tip">
+                            <img src="img/긴급조치강아지.jpg" alt="dog">
+                            
+                            <p id="long_text">
+                                <i class="fa-solid fa-circle-info"></i> 먼저 읽어주세요!<br><br>
+                                긴급하게 치료 및 보호를 필요로 하는 동물을 발견했을 때엔 동물단체의 도움을 즉각적으로 받을 수 없습니다.<br>
+                                왜냐하면 동물 구조 및 보호조치는 119시스템처럼 바로 출동을 할 수 있는 여건이 안되어 있기 때문입니다.<br>
+                                간혹 긴급을 요하는 동물을 발견했을 때 전화 제보를 통해 '빨리 와서 데려가세요'라고 요청하는데,<br>
+                                단체 관계자가 그 현장 가까이에 있지 않는 한,<br>
+                                이는 어느 동물단체에서도 해결할 수 없습니다.<br>
+                            </p>
+                        </div>
+                        <br>
+                        <p class="point">가장 빠른 방법은 목격자만이 할 수 있기 때문에 다음 방법에 의해 대처해 주시기 바랍니다.</p>
+                        <br>
+                        <p>이때 주인이 없는 동물일 경우 다소 난감하게 대하는 동물의사도 있습니다. 치료비 때문이라기보다는 동물의 사후 처리에 대해 곤혹스러운 마음이 들어서일 것입니다.<p> 
+                            먼저 동물을 병원에 버리고 가지 않는다는 신뢰를 줄 수 있도록 잘 설득하시고, 치료비 일부라도 지불해 응급처치를 받을 수 있게 해주십시오.</p>
+
+                        <div class="emergency_people">
+                            <img id="emergency_img1" src="img/캐릭터.png" alt="캐릭터">
+                        </div>  
+
+                        <div class="example">
+                            <p class="point">동물이송</p><br>
+
+                            <p>대부분의 목격자들이 동물 이송을 난감해 하는데 이는 그리 어려운 일이 아닙니다.
+                                마음을 진정시키고 다음과 같이 침착하게 대처해 주십시오.
+                                작은 동물일 경우 그대로 품에 안아서 택시를 이용하는 방법도 있으며,
+                                조금 큰 동물은 주변의 상가나 주변인에게 도움을 요청, 종이 박스 같은 것에 담아서 이송하는 방법도 있습니다.
+                                이때 동물이 구토, 설사, 출혈 등의 경우도 있으므로
+                                반드시 타월이나 신문지, 비닐봉투 등을 준비하시기 바랍니다.                       
+                            </p>
+                        </div>
+                        <br>
+                        <div class="example">
+                            <p class="point">중대형의 개일 경우</p><br>
+
+                            <p>
+                                통증 때문에 난폭한 행동을 할 수 있으므로 119에 도움을 요청하십시오. 
+                                지역에 따라 119가 출동하기를 난감해 하는 경우도 있습니다. 
+                                그럴 경우, 난폭한 개를 보통의 사람이 이송할 경우 인재로 이어지게 되면
+                                 어차피 119가 출동해야 한다는 것을 주지시키고, 
+                                 사전 예방을 위한 조치라는 것을 잘 설득하셔서 도움을 받으십시오.
+                            </p>
+                        </div>
+                       
+                    <br>
+
+                        <h1>긴급한 동물의 응급처치를 끝낸후의 조치</h1>
+                        <br>
+                        <p class="point">긴급한 동물은 가능한 구조자가 임시보호해 주시면서 동물단체를 통해 입양될 수 있도록 해주시기 바랍니다.</p>
+                        <br>
+                        <p>모든 동물 단체는 늘어만 가는 집 없는 동물로 인해 한계상황에 처해 있고, 
+                            누구에게나 임시보호는 힘에 겨운 일입니다. 
+                            가여운 생명을 외면하지 말고 조금만 더 적극적인 입장을 취해 주시기 바랍니다. 
+                            그러나 도저히 그럴 입장이 안 되시면 동물 구조 단체에 도움을 요청하십시오. 
+                            동물단체가 성의껏 도와줄 것입니다.
+                        </p>
+                        <br>
+                        <p class="point">주인을 찾아보는 일은 꼭 해주셔야 합니다.</p>
+                        <br>
+                        <p>
+                            구조자는 구조 동물에 대해 주인을 찾을 수 있도록 노력해 주시기 바랍니다. 동물이 버려진 것이 아니라 집을 나왔다가 길을 잃은 것이라면
+                             주인이 애타게 찾고 있을 겁니다. 
+                             동물 입장에서도 입양보다는 주인을 찾는 것이 우선이며 
+                             더 좋은 일입니다.
+                              인근지역에 동물의 특성을 표기한 후 사진을 첨부해서 전단지를 붙이고,
+                               파출소, 구청, 동물병운, 애견샵 등에 배포, 부착해 주시기바랍니다.
+                        </p>
+                    </div>
+                    <br>
+                    <div id="emergency_three">
+                        <h1>02.잠깐!! 이런동물의 구조는 미뤄보세요.</h1>
+                        <br>
+                        <p class="point">
+                            육안으로 보아 건강상태가 비교적 양호한, 그러나 다소 초췌한 발바리들을 만날지라도 모두 구조의 대상으로 보지 말아주십시오.
+                        </p>
+                        <br>
+                        <p>
+                            대다수의 발바리들은 주인의 관리로부터 자유롭게 키워지는 경우가 많아 행동 반경이 넓습니다. 인근지역 어딘가에 집이 있는 경우가 많으므로 떠돌이 개라고 추정될 경우엔 즉각적으로 잡는 것보다는 시간을 두고 지켜보는 것이 좋습니다.
+                        </p>
+                        <br>
+                        <p class="point">
+                            떠돌이 생활에 적응력을 보이는 개를 포획할 경우, 오히려 불행한 결과를 초래할 수도 있습니다.
+                        </p>
+                        <br>
+                        <p>
+                            이들은 최선의 환경을 제공할 수 있는 입양의 기회가 매우 적은 현실이므로 전문 구조단체에서 보호하다가 수용능력 한계로 인해 일정기간이 지나면 안락사될 수도 있습니다. 사설보육원들은 모두 한계상황이기 때문에 이들을 다 받아줄 수도 없고 재정 부족으로 확장도 어려운 상황에 있습니다. 그리고 운좋게 사설보육시설에 수용된다고 하더라도 수백 마리의 틈에서 살아가야 하기 때문에 이들은 반려동물로서 좋은 환경과 사랑을 얻기 어렵고, 사육의 개념으로 목숨을 이어갈 수밖에 없습니다. 부상, 질병 등의 긴급을 요하는 사안이 아닐 경우엔 그대로 지켜보며 동물들의 자유로운 행동을 인정해 주며 적당하고 간헐적인 관리를 하는 것도 동물을 돌보는 방법 중 하나라 할 수 있습니다.
+                        </p>
+                        <br>
+                        <p class="point">
+                            어린 아기 강아지
+                        </p>
+
+                        <br>
+                        <p>
+                            엄마 강아지로부터 떨어진 아기 강아지를 섣불리 만지셔서는 안되며 
+                            데려오는 일도 신중하셔야 합니다. 
+                            엄마 강아지와 함께 이동 중에 떨어져 있을 수도 있기 때문입니다. 
+                            이럴 경우에는 시간을 두고 엄마 강아지가 찾으러 올
+                            때까지 기다려야 합니다. 
+                            그럼에도 불구하고 섣불리 데려오면 어디에선가 엄마 강아지가 오히려 안타깝게 울부짖을 겁니다.
+                            
+                            혹은 이제부터 혼자서 살아가는 방법을 터득해야 할 시기일 수도 있습니다. 
+                            동물은 주어진 환경의 생태 속에서 스스로 조절되는 것만이 오히려 대량 학살을 피할 수 있습니다.
+                             또한 야생성이 강한 모습을 보이는 어린
+                            강아지들도 억지로 잡으려 애쓰지 마십시오. 나름대로 도심 속에서 야생 형태로 살아가는 강아지들의 삶을 
+                            인정하여야 합니다. 다만, 할 수만 있다면 성장한 강아지는 불임 수술 후 
+                            재방사할 수 있는 방법을 취해 주시면
+                            도심 속의 강아지 대량 증가 문제 해소에 큰 역할을 하게 될 것입니다.
+                            </p>
+                    </div>
+                    <br>
+                    <div id="emergency_four">
+                        <h1>03.긴급동물 보호조치 접수방법</h1>
+                        <br>
+                        <p>
+                            <a href="https://www.animal.go.kr/front/awtis/relevant/relevantList.do?menuNo=5000000014" target="_blank">
+                                동물보호관리시스템상 동물보호 업무 부서 안내(링크)
+                                <i class="fa-solid fa-up-right-from-square"></i>  
+                            </a>
+                            에서 담방부서 검색가능 또는 해당 지자체 전화 후 동물보호 담당 주무관 연결 요청
+                        </p>                        
+                    </div>
+                    <br>
+
+                    <div id="emergency_five">
+
+                        <table>
+                            <caption>04.야생동물 구조 관련 단체 및 기관</caption>
+                            <tr>
+                                <th>센터명</th>
+                                <th>소재지</th>
+                                <th>연락처</th>
+                                <th>운영기관</th>
+                                <th>비고</th>
+                            </tr>
+
+                            <tr>
+                                <th>서울</th>
+                                <td>서울시 관악구 관악로 1</td>
+                                <td>02-880-8659</td>
+                                <td><a href="http://www.seoulwildlifecenter.or.kr/" target="_blank">서울대학교 수의과대학<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>위탁</td>
+                            </tr>
+
+                            <tr>
+                                <th>경기</th>
+                                <td>경기도 평택시 진위면 동천길 132-93</td>
+                                <td>031-8008-6212</td>
+                                <td><a href="https://gvs.gg.go.kr/" target="_blank">경기도청 동물보호과<i class="fa-solid fa-up-right-from-square"></i> </a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>인천</th>
+                                <td>인천시 연수구 송도동 13-20 (솔찬공원내)</td>
+                                <td>032-858-9702</td>
+                                <td><a href="https://www.incheon.go.kr/ecopia/index" target="_blank">인천시 보건환경연구원<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>강원</th>
+                                <td>강원도 춘천시 강원대학길 1</td>
+                                <td>033-250-7504</td>
+                                <td><a href="https://vetmed.kangwon.ac.kr/vetmed/index.do" target="_blank">강원대학교 수의과대학<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>부산</th>
+                                <td>부산시 사하구 낙동남로 1240-2</td>
+                                <td>051-209-2091</td>
+                                <td><a href="https://www.busan.go.kr/wetland/wildanimalinfo01" target="_blank">낙동강 에코센터<i class="fa-solid fa-up-right-from-square"></i> </a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>대전</th>
+                                <td>대전시 유성구 궁동 대학로 99</td>
+                                <td>042-821-7930</td>
+                                <td><a href="http://dwrc.or.kr/" target="_blank">충남대학교 수의과대학<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>위탁</td>
+                            </tr>
+
+                            <tr>
+                                <th>울산</th>
+                                <td>울산시 남구 옥동 506-3</td>
+                                <td>052-256-5322</td>
+                                <td><a href="">울산대공원</a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>충북</th>
+                                <td>충북 청주시 청원구 양청4길 45</td>
+                                <td>043-216-3328</td>
+                                <td><a href="http://wildlife-center.kr/" target="_blank">충북대학교 수의과대학<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>위탁</td>
+                            </tr>
+
+                            <tr>
+                                <th>충남</th>
+                                <td>충남 예산군 예산읍 대학로 54 (공주대학교 산업과학대학 내)</td>
+                                <td>041-334-1666</td>
+                                <td><a href="https://cnwarc.modoo.at/" target="_blank">공주대학교 산학협력단<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>위탁</td>
+                            </tr>
+
+                            <tr>
+                                <th>전북</th>
+                                <td>전북 익산시 고봉로 79번지</td>
+                                <td>063-850-0983</td>
+                                <td><a href="">전북대학교 수의과대학</a></td>
+                                <td>위탁</td>
+                            </tr>
+
+                            <tr>
+                                <th>전남</th>
+                                <td>전남 순천시 순천만길 922-15</td>
+                                <td>061-749-4800</td>
+                                <td><a href="">순천시 환경보호과</a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>경북</th>
+                                <td>경북 안동시 도산면 퇴계로 2150-44</td>
+                                <td>054-840-8250</td>
+                                <td><a href="https://www.gb.go.kr/Main/open_contents/section/gbforest/index.html" target="_blank">경상북도 산림자원개발원<i class="fa-solid fa-up-right-from-square"></i> </a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>경남</th>
+                                <td>경남 진주시 진주대로 501(가좌동 900)</td>
+                                <td>055-754-9575</td>
+                                <td><a href="http://gamc.gnu.ac.kr/" target="_blank">경상대학교 수의과대학<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>위탁</td>
+                            </tr>
+
+                            <tr>
+                                <th>제주</th>
+                                <td>제주도 제주시 산천단남길 42</td>
+                                <td>064-752-9982</td>
+                                <td><a href="https://vetmed.jejunu.ac.kr/" target="_blank">제주대학 수의학과대학<i class="fa-solid fa-up-right-from-square"></i></a></td>
+                                <td>직영</td>
+                            </tr>
+
+                            <tr>
+                                <th>광주</th>
+                                <td>광주시 서구 유촌동 719-2일원</td>
+                                <td>062-613-6651</td>
+                                <td><a href="">광주시 보건환경연구원</a></td>
+                                <td>직영</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
 
 
 
