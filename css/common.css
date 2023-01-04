@@ -34,6 +34,8 @@ ol {
     margin: 0 auto;
 }
 
+
+
 /* 여기부터 헤드+슬라이더 */
 
 #header {
@@ -147,6 +149,9 @@ ol {
     vertical-align: middle;
 }
 
+.info{
+    color:gray !important;
+} 
 /* 헤더는 여기까지 */
 
 
@@ -357,7 +362,13 @@ footer>.container {
         right: 25px;
         font-size: 60px;
     }
+    #header2 {
+        width: 100%;
+        height:110px;
+        background-color: whitesmoke;
+        padding:0 10px;
 
+    }
     #header2_togglebox {
         width: 100%;
         display: flex;
@@ -510,7 +521,13 @@ footer>.container{
         right: 25px;
         font-size: 60px;
     }
+    #header2 {
+        width: 100%;
+        height:110px;
+        background-color: whitesmoke;
+        padding:0 10px;
 
+    }
     #header2_togglebox {
         width: 100%;
         display: flex;

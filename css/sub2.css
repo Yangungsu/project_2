@@ -4,6 +4,10 @@ p{
     line-height: 20px;
 }
 
+/* .info{
+    color:gray !important;
+}  */
+
 #section_one {
     width: 100%;
     height: auto;
@@ -155,7 +159,7 @@ span:hover{
 
 #step{
     width:100%;
-    height:510px;       
+        
 }
 
 #step_all>hr{
@@ -201,6 +205,7 @@ span:hover{
 #step1{
     width:100%;
     height:550px;
+    padding:0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,6 +215,7 @@ span:hover{
 #step2{
     width:100%;
     height:600px;
+    padding:0 10px;
     display: flex;  
     flex-wrap: wrap;
     justify-content: space-between;
@@ -231,6 +237,7 @@ span:hover{
 #step3{
     width:100%;
     height:500px;   
+    padding:0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -246,24 +253,49 @@ span:hover{
     font-size: 30px;
     line-height: 50px;
 }
+
 #emergency{
     display: none;
-    width:100%;
-   
+    width:100%;   
     margin:30px 0;
+}
+
+.emergency_tip{
+    margin:10px 0 30px 0;
+}
+
+.emergency_people{
+    margin:30px 0;
+}
+
+#emergency_one>h1{
+    padding:30px 0;
 }
 
 #emergency ul{
     display: flex;
+    margin-bottom:20px;
+}
+
+#emergency ul>li:hover{
+    background-color:#eee;
 }
 
 #emergency ul>li{
-    padding-left:15px;
+    padding:10px 15px;
 }
 
 #emergency ul a{
     text-decoration: none;
     color:black;
+}
+
+#emergency_two{
+    padding-top:50px;
+}
+
+#emergency_two>h1{
+    padding: 30px 0;
 }
 
 #emergency_two>.emergency_tip{
@@ -283,6 +315,14 @@ span:hover{
 
 #emergency_three{
     padding-top:30px;
+}
+
+#emergency_three>h1{
+    padding:30px 0;
+}
+
+#emergency_four>h1{
+    padding:30px 0;
 }
 
 #emergency_four{
@@ -315,6 +355,7 @@ span:hover{
     padding-top:30px;
 }
 
+
 #emergency_five tr>td,th{
     font-size:20px;
     border:1px solid #eee;
@@ -324,7 +365,8 @@ span:hover{
 #emergency_five caption{
     font-weight: bold;
     font-size:30px;
-    padding:20px 0;
+    padding:30px 0;
+    text-align: left;
 }
 
 #emergency_five tr a{
@@ -367,6 +409,11 @@ span:hover{
         width:100%;      
     }
 
+    #step1>p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
     #step2{
         width:100%;
         height:900px;        
@@ -378,7 +425,10 @@ span:hover{
     #step2>i{
         display: none;
     }
-
+    #step3>p{
+        font-size:20px;
+        line-height:30px;        
+    }
 
     #step3{
         width:100%;
@@ -387,6 +437,7 @@ span:hover{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
     }
 
     #emergency{
@@ -394,6 +445,8 @@ span:hover{
         margin: 30px auto;
      
     }
+
+    
 
     .emergency_tip>img{
         width:100%;
@@ -403,6 +456,12 @@ span:hover{
     #emergency_img1{
         width:100%;
         height: 100%;
+    }
+
+    #emergency_five tr>td,th{
+        font-size:14px;
+        border:1px solid #eee;
+        padding:5px 10px;
     }
 }
 
